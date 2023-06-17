@@ -1,5 +1,7 @@
 # **Browser Reduce window.screen Fingerprint**
 
+As of 2023-06-07, Windows version of Brave already implemented window.screen Fingerprint protection by default, so this script is not required. Linux still does not have this feature yet.
+
 # Introduction
 
 Your browser has a unique fingerprint. Ad companies use this uniqueness to track users' behavior even if user has enabled incognito mode and VPN.
