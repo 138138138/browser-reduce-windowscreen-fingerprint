@@ -1,7 +1,5 @@
 # **Browser Reduce window.screen Fingerprint**
 
-As of 2023-06-07, Windows version of Brave already implemented window.screen Fingerprint protection by default, so this script is not required. Linux still does not have this feature yet.
-
 # Introduction
 
 Your browser has a unique fingerprint. Ad companies use this uniqueness to track users' behavior even if user has enabled incognito mode and VPN.
@@ -14,7 +12,11 @@ The `window.screen` also has `availTop` and `availLeft` properties. This exposes
 
 The `window.screen` also exposes if you have multiple monitors with the `isExtended` property. It will be `true` if you have second screen, and `false` if you do not.
 
-# Mitigations
+# Mitigations for Brave Browser
+
+Brave already enable screen fingerprinting out of the box. You can check your screen information on [https://browserleaks.com/javascript](https://browserleaks.com/javascript). If it is not enabled, go to `about:flags` then enable `Block screen fingerprinting`.
+
+# Mitigations for other Chromium-based browsers
 
 1. Set the `availWidth` and `availHeight` to be the same as `width` and `height`.
 2. Set `availTop` and `availLeft` to 0.
