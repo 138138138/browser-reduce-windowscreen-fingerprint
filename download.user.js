@@ -10,6 +10,6 @@
 
 Object.defineProperty(window.screen, "availWidth", { value: window.screen.width, writable: false, enumerable: true });
 Object.defineProperty(window.screen, "availHeight", { value: window.screen.height, writable: false, enumerable: true });
-Object.defineProperty(window.screen, "availTop", { value: 0, writable: false, enumerable: true });
-Object.defineProperty(window.screen, "availLeft", { value: 0, writable: false, enumerable: true });
+Object.defineProperty(window.screen, "availTop", { value: 0, writable: true, enumerable: true });
+Object.defineProperty(window.screen, "availLeft", { value: 0, writable: true, enumerable: true });
 Object.defineProperty(window.screen, "isExtended", { value: false, writable: false, enumerable: true });
